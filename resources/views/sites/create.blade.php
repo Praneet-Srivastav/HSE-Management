@@ -22,10 +22,10 @@
         <input type="hidden" name="remember" value="true">
         <div class="relative">
 
-            <label class="ml-3 text-sm font-bold text-gray-700 tracking-wide">Libellet</label>
+            <label class="ml-3 text-sm font-bold text-gray-700 tracking-wide">Name</label>
             <input
                 class=" w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl focus:border-indigo-500"
-                name="name" placeholder="Libellet">
+                name="name" placeholder="Enter site name">
         </div>
         <div class="mt-8 content-center">
             <label class="ml-3 text-sm font-bold text-gray-700 tracking-wide">

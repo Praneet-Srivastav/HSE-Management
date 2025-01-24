@@ -44,14 +44,13 @@ class LoginController extends Controller
 
     protected function credentials(Request $request)
     {
-        return array_merge($request->only($this->username(), 'password'), ['role' => 'A']);
+        return $request->only($this->username(), 'password');
     }
 
     protected function sendFailedLoginResponse(Request $request)
     {
         throw ValidationException::withMessages([
-            $this->username() => [trans('auth.failed')],
-            'role' => [trans('auth.role_not_allowed')],
+            $this->username() => ['These credentials do not match our records.'],
         ]);
     }
 

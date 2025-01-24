@@ -39,7 +39,7 @@
                 </div>
                 @endif
                 <a class="" href="/sites/create">
-                    <img class="shadow-white w-8 h-8 mt-5" src=" {{ asset('/icons/plus.png') }} " alt="ADD">
+                    <img class="shadow-white w-8 h-8 mt-5" src=" {{ asset('/icons/plus.png') }} " alt="Add Site">
                 </a>
             </div>
             <div class="flex items-center justify-between">
@@ -81,7 +81,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- list des ....!-->
+                            <!-- Site list -->
                             @foreach ($sites as $item)
                             <tr>
                                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
@@ -109,14 +109,14 @@
 
                                         <a class="relative" href="{{ route('sites.edit', $item->id) }}">
                                             <img class="shadow-white w-8 h-8" src=" {{ asset('/icons/editer.png') }} "
-                                                alt="EDITe">
+                                                alt="Edit Site">
                                         </a>
                                         <form action="{{ route('sites.destroy', $item->id) }}" method="post">
                                             @csrf
                                             @method('DELETE')
                                             <button class="relative" type="submit">
                                                 <img class="shadow-white w-8 h-8"
-                                                    src=" {{ asset('/icons/poubelle.png') }} " alt="EDITe">
+                                                    src=" {{ asset('/icons/poubelle.png') }} " alt="Delete Site">
                                             </button>
                                         </form>
 
@@ -125,7 +125,7 @@
                             </tr>
                             @endforeach
 
-                            <!--  FIN de list des ....!-->
+                            <!-- End of site list -->
 
                         </tbody>
                     </table>
@@ -134,8 +134,3 @@
             </div>
         </div>
     </div>
-
-
-
-
-    @endsection

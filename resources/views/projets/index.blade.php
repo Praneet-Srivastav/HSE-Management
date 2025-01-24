@@ -120,14 +120,14 @@
 
                                         <a class="relative" href="{{ route('projets.edit', $item->id) }}">
                                             <img class="shadow-white w-8 h-8" src=" {{ asset('/icons/editer.png') }} "
-                                                alt="EDITe">
+                                                alt="Edit">
                                         </a>
                                         <form action="{{ route('projets.destroy', $item->id) }}" method="post">
                                             @csrf
                                             @method('DELETE')
                                             <button class="relative" type="submit">
                                                 <img class="shadow-white w-8 h-8"
-                                                    src=" {{ asset('/icons/poubelle.png') }} " alt="EDITe">
+                                                    src=" {{ asset('/icons/poubelle.png') }} " alt="Delete">
                                             </button>
                                         </form>
                                     </span>

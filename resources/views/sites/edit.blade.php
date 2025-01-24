@@ -27,7 +27,7 @@
             <label class="ml-3 text-sm font-bold text-gray-700 tracking-wide">Name(You can't change the name)</label>
             <input
                 class=" w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl focus:border-indigo-500"
-                name="name" placeholder="Libellet" disabled value="{{ $site->name }}">
+                name="name" placeholder="Site name" disabled value="{{ $site->name }}">
         </div>
         <div class="mt-8 content-center">
             <label class="ml-3 text-sm font-bold text-gray-700 tracking-wide">
